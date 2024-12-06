@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.10.0 on win32)" generated="20241205 23:30:27.741" rpa="true">
+<suite id="s1" name="newRbot" source="C:\Users\Good Vibes\eclipse-workspace\newRbot">
+<suite id="s1-s1" name="Test" source="C:\Users\Good Vibes\eclipse-workspace\newRbot\test">
+<suite id="s1-s1-s1" name="testSuite1" source="C:\Users\Good Vibes\eclipse-workspace\newRbot\test\testSuite1.robot">
+<test id="s1-s1-s1-t1" name="SimpleLoginTest">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20241205 23:30:28.368" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20241205 23:30:28.368" endtime="20241205 23:30:34.699"></status>
+</kw>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>10</arg>
+</arguments>
+<status status="PASS" starttime="20241205 23:30:34.699" endtime="20241205 23:30:34.702"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=username</arg>
+<arg>Admin</arg>
+</arguments>
+<msg timestamp="20241205 23:30:34.702" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20241205 23:30:34.702" endtime="20241205 23:30:35.241"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>name=password</arg>
+<arg>admin123</arg>
+</arguments>
+<msg timestamp="20241205 23:30:35.242" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20241205 23:30:35.299" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20241205 23:30:35.392" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20241205 23:30:35.241" endtime="20241205 23:30:35.392"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button</arg>
+</arguments>
+<msg timestamp="20241205 23:30:35.393" level="INFO">Clicking button 'xpath=//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20241205 23:30:35.393" endtime="20241205 23:30:38.036"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20241205 23:30:42.044" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20241205 23:30:38.036" endtime="20241205 23:30:42.044"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i</arg>
+</arguments>
+<msg timestamp="20241205 23:30:42.046" level="INFO">Clicking element 'xpath=//*[@id="app"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/i'.</msg>
+<status status="PASS" starttime="20241205 23:30:42.045" endtime="20241205 23:30:42.152"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<msg timestamp="20241205 23:30:44.166" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20241205 23:30:42.153" endtime="20241205 23:30:44.166"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>link=Logout</arg>
+</arguments>
+<msg timestamp="20241205 23:30:44.168" level="INFO">Clicking element 'link=Logout'.</msg>
+<status status="PASS" starttime="20241205 23:30:44.167" endtime="20241205 23:30:45.339"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<msg timestamp="20241205 23:30:49.342" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20241205 23:30:45.339" endtime="20241205 23:30:49.344"></status>
+</kw>
+<tags>
+<tag>login</tag>
+</tags>
+<status status="PASS" starttime="20241205 23:30:28.367" endtime="20241205 23:30:49.346" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20241205 23:30:27.839" endtime="20241205 23:30:49.350"></status>
+</suite>
+<status status="PASS" starttime="20241205 23:30:27.834" endtime="20241205 23:30:49.362"></status>
+</suite>
+<status status="PASS" starttime="20241205 23:30:27.805" endtime="20241205 23:30:49.367"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tasks</stat>
+<stat pass="1" fail="0">All Tasks</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">login</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="newRbot">newRbot</stat>
+<stat pass="1" fail="0" id="s1-s1" name="Test">newRbot.Test</stat>
+<stat pass="1" fail="0" id="s1-s1-s1" name="testSuite1">newRbot.Test.testSuite1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
